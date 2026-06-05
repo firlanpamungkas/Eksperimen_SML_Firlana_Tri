@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
 # Load dataset
-df = pd.read_csv("titanic.csv")
+df = pd.read_csv("../titanic.csv")
 
 # Copy dataset
 data = df.copy()
