@@ -26,3 +26,9 @@ jobs:
       - name: Run Preprocessing
         run: |
           python preprocessing/automate_firlana.py
+
+      - name: Upload Preprocessed Dataset
+        uses: actions/upload-artifact@v4
+        with:
+          name: titanic-preprocessing
+          path: preprocessing/titanic_preprocessing.csv
