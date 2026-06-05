@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
 # Load dataset
-df = pd.read_csv("../titanic.csv")
+df = pd.read_csv("titanic.csv")
 
 # Copy dataset
 data = df.copy()
@@ -39,7 +39,7 @@ data["Embarked"] = le.fit_transform(
 
 # Save hasil preprocessing
 data.to_csv(
-    "titanic_preprocessing.csv",
+    "preprocessing/titanic_preprocessing.csv",
     index=False
 )
 
